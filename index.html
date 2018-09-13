@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<title>BioTec</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://raw.githubusercontent.com/biotecstartup/site/gh-pages/imagens/icone.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css" id="formatacao">
+    body{
+      background-color: #cecece;
+      margin: -20px auto -20px auto;
+    }
+    h2{
+      font-family: arial, sans-serif;
+       text-indent: 10px;
+      text-align: justify;
+    }
+    p{
+      font-family: arial, sans-serif;
+      font-weight: 15pt;
+      text-indent: 10px;
+    }
+    div#menu{
+      width: 1000px;
+
+    }
+        div#menu a{
+    display: block;
+    }
+    div#botao{
+      position: relative;
+      margin-left: 836px;
+      margin-top: -25px;
+    }
+    div#interface{
+      display: block;
+      width: 1000px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 20px black;
+      margin: -20px auto -20px auto;
+    }
+     div#pricing{
+      width: 1000px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+      margin: -20px auto -20px auto;
+      box-shadow: 0px 0px 20px black;
+    }
+    div#contact{
+      width: 1000px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+      margin: -20px auto -20px auto;
+      box-shadow: 0px 0px 20px black;
+    }
+    div#galeria_fotos{
+
+    }
+    iframe#gps{
+      width: 1000px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+      margin: -20px auto -20px 175px;
+      box-shadow: 0px 0px 20px black;
+    }
+    footer#rodape{
+      width: 1000px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+      height: 40px;
+      margin: 0px auto 0px auto;
+      box-shadow: 0px 0px 20px black;
+    }
+    div#googleMap{
+      width: 1000px;
+    }
+    figure{
+      position: relative;
+      margin-top: -30px;
+    }
+    figure.img_centro img{
+      width: 100%;
+      height: 100%;
+    }
+    figure.img_centro figcaption{
+      position: absolute; 
+      opacity: 0;
+      top: 0;
+      background-color: rgba(0,0,0,0.6);
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+    }
+    figure.img_centro figcaption img{
+      width: 300px;
+      height: 280px;
+      margin-left: 284px;
+    }
+    figure.img_centro figcaption h2{
+       text-align: center;
+       font-family: Arial, sans-serif;
+       font-size: 30pt;
+       color: #b87333;
+       text-shadow: 5px 5px 5px black;
+     }
+    figure.img_centro figcaption:hover{
+      opacity: 1;
+      transition: 1.5s;
+    }
+    ul#galeria_fotos{
+      width: 1000px;
+      margin: 0 auto;
+      padding: 50px;
+      overflow: hidden;
+      list-style: none;   
+    }
+    ul#galeria_fotos li{
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border: 5px solid #cecece;
+      background-color: #ffffff;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+    ul#galeria_fotos li#foto1{
+      background: url("https://http2.mlstatic.com/biodigestor-residencial-produza-biogas-e-biofertilizante-D_NQ_NP_618288-MLB26463535169_112017-F.jpg")no-repeat;
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+
+    }
+        ul#galeria_fotos li#foto2{
+      background: url("https://www.abecbrasil.org.br/novo/wp-content/uploads/2017/11/biodigestores.jpg") no-repeat;
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+    
+    }
+        ul#galeria_fotos li#foto3{
+      background: url("http://jom.com.br/wp-content/uploads/2016/11/Biodigestores-04.jpg") no-repeat;
+           background-position: 50% 50%;
+      background-size: 500px 500px;
+    }
+        ul#galeria_fotos li#foto4{
+      background: url("http://tecnologiasocial.fbb.org.br/data/files/08/00/8F/ED/0D3BD41059C179D4BD983EA8/biodigestor%2002.jpg") no-repeat;
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+    }
+        ul#galeria_fotos li#foto5{
+      background: url("https://central3.to.gov.br/arquivo/367112_1000.jpg") no-repeat;
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+    }
+        ul#galeria_fotos li#foto6{
+      background: url("https://cdn4.ecycle.com.br/cache/images/eDicas/50-650-biodigestao-750.jpg") no-repeat;
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+    }
+        ul#galeria_fotos li#foto7{
+      background: url("https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia6273/29.jpg") no-repeat;
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+    }
+        ul#galeria_fotos li#foto8{
+      background: url("https://http2.mlstatic.com/projeto-fossa-septica-biodigestora-facil-fazer-D_NQ_NP_639305-MLB25009636850_082016-F.jpg") no-repeat; 
+      background-position: 50% 50%;
+      background-size: 500px 500px;
+    }
+    ul#galeria_fotos li#foto1:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;
+    }
+     ul#galeria_fotos li#foto2:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;
+    }
+     ul#galeria_fotos li#foto3:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;
+    }
+     ul#galeria_fotos li#foto4:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;      
+    }
+     ul#galeria_fotos li#foto5:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;
+    }
+     ul#galeria_fotos li#foto6:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px; 
+    }
+     ul#galeria_fotos li#foto7:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;
+    }
+     ul#galeria_fotos li#foto8:hover{
+      background-position: 0% 0%;
+      background-size: 200px 200px;
+    }
+    ul#galeria_fotos li:hover{
+      -webkit-transform:scale(1.5);
+      -webkit-transition:all.3s ease-in;
+    }
+</style>
+
+<body id="myPage">
+  <div id="interface">
+    <section id="centralizar">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fechar
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Inicio</a>
+
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top" id="menu">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>BioTec</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sobre</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Links Uteis<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="http://portal.estacio.br/graduacao/administra%C3%A7%C3%A3o-bacharelado/" class="w3-bar-item w3-button">Curso Administração</a>
+      <a href="http://portal.estacio.br/graduacao/analise-e-desenvolvimento-de-sistemas/" class="w3-bar-item w3-button">Curso Analise de Sistemas</a>
+      <a href="http://inscricoes.estacio.br/?uf=&po=novahome#curso-cidade-unidade" class="w3-bar-item w3-button">Inscrição Estacio</a>
+    </div>
+  </div>
+  
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+  
+    <a href="#pricing" class="w3-bar-item w3-button">Sobre</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contato</a>
+    
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://biotecstartup.github.io/site/imagens/68b7ea6f-f5a1-48b0-aa19-af7bbd90f52c.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;margin-top: 40px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom" id="botao">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">BioTec</button>
+  </div>
+
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Startup</h4>
+      <h5>Criada pelos alunos do 3º e 6º periodos do curso de Administração na semana academica 2018.2. <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Com suporte tecnologico dado pelos alunos do curso de Analise e desenvolvimento de sistemas. </p>
+      </p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Da instituição de ensino superior <a href="http://portal.estacio.br/">Estacio de Sa</a> Juiz de Fora </p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<figure class="img_centro">
+<img src="http://pontobiologia.com.br/blog/wp-content/uploads/2017/10/Gest%C3%A3o_meio-ambiente.jpg" style="width:100%;min-height:350px;max-height:600px;"> 
+<figcaption>
+   <h2>Uma empresa ligada a tecnologia e ao meio ambiente</h2>
+  <img src="http://i1.wp.com/kasaflor.com.br/wp-content/uploads/2013/11/arvore-3.png"> 
+</figcaption>
+</figure>
+<h2>O que são biodigestores?</h2>
+<p>São equipamentos de fabricação relativamente simples, que possibilitam o reaproveitamento de detritos para gerar gás e adubo, também chamados de biogás e biofertilizantes. O biodigestor geralmente é alimentado com restos de alimentos e fezes de animais, acrescidos de água.</p>
+</div>
+<div>
+</div>
+
+
+
+<ul id="galeria_fotos">
+  <li id="foto1"></li>
+  <li id="foto2"></li>
+  <li id="foto3"></li>
+  <li id="foto4"></li>
+  <li id="foto5"></li>
+  <li id="foto6"></li>
+  <li id="foto7"></li>
+  <li id="foto8"></li>
+</ul>
+
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="pricing">
+
+<div class="w3-quarter">
+<h2>Sobre a Startup:</h2>
+<p> Nosso projeto é sobre biodigestores! Um mecanismo com o intuito de transformar alguns estabelecimentos para que eles possam ser mais autossustentáveis. Um bom exemplo para esse assunto seriam os restaurantes, que por si só, produzem lixo orgânico que, com a ajuda desse mecanismo seria capaz de gerar gás de cozinha, que por sua vez, alimentaria o próprio restaurante.</p>
+
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="http://www.ambflex.com.br/wp-content/uploads/2018/04/SUSTENTABILIDADE-COMO-AS-IND%C3%9ASTRIAS-PENSAM-NA-PROTE%C3%87%C3%83O-DO-MEIO-AMBIENTE..jpg" alt="Snow" style="height: 150px;">
+  <div class="w3-container">
+ 
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="http://www.domalberto.edu.br/wp-content/uploads/2017/02/GEOGRAFIA-MEIO-AMBIENTE-E-SUSTENTABILIDADE-786-x-460-1.png" alt="Lights" style="height: 150px;">
+  <div class="w3-container">
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="http://iscanews.ir/Media/Image/1396/10/20/636511869236454251.jpg" alt="Mountains" style="height: 150px;">
+  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contato</span></div>
+      
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Juiz de Fora - MG</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  bio.tec.startup@gmail.com</p>
+    </div>
+    <div class="w3-half">
+         <img src="https://biotecstartup.github.io/site/imagens/68b7ea6f-f5a1-48b0-aa19-af7bbd90f52c.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+   
+   </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59294.51416043845!2d-43.411608761850104!3d-21.74512561724209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sestacio+jf!5e0!3m2!1spt-BR!2sbr!4v1536816339987" id="gps"width="100%" height="100%px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://goo.gl/maps/NNE6jVgDi8z"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>BioTec Startup</h4>
+
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Volte ao topo</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</section>
+</div>
+</body>
+</html>
